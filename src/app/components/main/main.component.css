@@ -1,0 +1,125 @@
+main {
+  width: 100%;
+  padding: 8rem 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7.2rem;
+}
+
+.m-title {
+  width: 59rem;
+  max-width: 100%;
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.m-title h1 {
+  font-family: Archivo;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.m-title p {
+  font-family: Archivo;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.m-product {
+  max-width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 32.6rem);
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 36rem));
+  column-gap: 3.2rem;
+  row-gap: 4rem;
+}
+
+.m-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.m-card--image {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f7ff;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.m-card--image img {
+  transition: .5s ease;
+}
+
+.m-card--detail h2 {
+  font-family: Archivo;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.m-card--detail span {
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7ca2f4;
+}
+
+.m-card-price {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.m-card--image:hover img{
+  scale: 1.2;
+}
+
+@media (max-width: 428px) {
+  .m-title {
+    width: 100%;
+  }
+  .m-title h1 {
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .m-title p {
+    font-family: Archivo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
