@@ -1,0 +1,13 @@
+h1, p {
+  margin: 0;
+}
+
+
+.home-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Archivo", sans-serif;
+}

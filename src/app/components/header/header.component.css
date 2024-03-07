@@ -1,0 +1,139 @@
+header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-frete {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+.h-hero {
+  width: 100vw;
+  height: 40rem;
+  background-image: url("../../../assets/hero-desktop.svg");
+}
+
+.layout {
+  width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.h-hero-container {
+  color: #fff;
+  width: 53rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.h-hero--logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.h-hero--logo p {
+  font-family: Archivo;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.h-hero--text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.h-hero--text h1 {
+  font-family: Archivo;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.h-hero--text p {
+  font-family: Archivo;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .h-frete {
+    font-family: Archivo;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1.2rem;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .h-hero {
+    height: 35rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../assets/image-michael-jordan.png");
+    background-repeat: no-repeat;
+  }
+  .layout {
+    width: 70rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .h-frete {
+    font-family: Archivo;
+    font-size: 8px;
+    font-weight: 500;
+    padding: 1.2rem;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .layout {
+    width: 31rem;
+  }
+
+  .h-hero--logo p {
+    font-family: Archivo;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .h-hero--text h1 {
+    font-family: Archivo;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .h-hero--text p {
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
