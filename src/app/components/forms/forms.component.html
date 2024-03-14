@@ -1,0 +1,16 @@
+<section class="forms-section">
+  <div class="layout">
+    <div class="form-container">
+      <h1>Promoções e cupons exclusivos</h1>
+      <p>Assine nossa <span>newsletter</span> para receber ofertas exclusivas semanalmente e ficar por dentro dos últimos lançamentos!</p>
+      <form [formGroup]="forms">
+        <input name="name" id="name" placeholder="Nome" formControlName="name">
+        <input  name="email" id="email" placeholder="Email" formControlName="email">
+        <button
+          (click)="submit()"
+        >Enviar</button>
+      </form>
+    </div>
+    <img src="https://cdn.accentuate.io/587217928444/1644834678729/AIR-JORDAN-1-PATENT-LEMKUS-BLOG-ARTICLE-BANNER-1316x669.jpg?v=0" alt="">
+  </div>
+</section>
