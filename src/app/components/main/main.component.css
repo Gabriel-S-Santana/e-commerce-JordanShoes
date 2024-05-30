@@ -42,7 +42,7 @@ main {
   max-width: 100%;
   display: grid;
   grid-template-rows: repeat(2, 32.6rem);
-  grid-template-columns: repeat(auto-fit, minmax(31rem, 36rem));
+  grid-template-columns: repeat(3, minmax(31rem, 36rem));
   column-gap: 3.2rem;
   row-gap: 4rem;
 }
@@ -99,6 +99,18 @@ main {
 
 .m-card--image:hover img{
   scale: 1.2;
+}
+
+@media(max-width: 1000px) {
+  .m-product {
+    grid-template-columns: repeat(2, minmax(31rem, 36rem));
+  }
+}
+
+@media(max-width: 650px) {
+  .m-product {
+    grid-template-columns: repeat(1, minmax(31rem, 36rem));
+  }
 }
 
 @media (max-width: 428px) {
